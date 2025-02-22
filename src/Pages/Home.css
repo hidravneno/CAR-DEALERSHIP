@@ -1,0 +1,55 @@
+/* Estilos generales */
+.Home {
+    padding: 20px;
+    background-color: rgb(213, 213, 222);
+    text-align: center;
+}
+
+/* Título */
+.Home h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: xx-large;
+    color: rgb(111, 9, 9);
+    text-align: center;
+}
+
+/* Imagen */
+.Home img {
+    width: 400px; /* Ajusta el ancho */
+    height: auto; /* Mantiene la proporción */
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-top: 10px;
+}
+
+/* Información */
+.Home .info {
+    color: rgb(111, 9, 9);
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Contenedor de controles */
+.controls {
+    margin-top: 20px;
+}
+
+/* Botón "Check Away" */
+.controls .btn {
+    background-color: #ff5733; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano */
+    transition: background-color 0.3s ease-in-out; /* Efecto de transición */
+    text-decoration: none; /* Elimina el subrayado */
+    display: inline-block; /* Mantiene la forma del botón */
+}
+
+/* Cambia el color al pasar el mouse */
+.controls .btn:hover {
+    background-color: #ff2e00;
+}

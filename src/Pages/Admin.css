@@ -1,0 +1,118 @@
+/* Estilos generales */
+.Admin {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a1a1a, #2c3e50); /* Fondo estilo agencia de autos */
+    min-height: 100vh;
+    color: #ecf0f1;
+}
+
+.Admin h2 {
+    color: #f1c40f;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Contenedor principal */
+.Admin .parent {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+/* Secciones de productos y cupones */
+.Admin .prods,
+.Admin .cpns {
+    width: 45%;
+    min-width: 350px;
+    background: rgba(44, 62, 80, 0.9); /* Fondo oscuro con transparencia */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+.form-control {
+    background-color: #34495e;
+    color: #ecf0f1;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #f1c40f;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Botón */
+.btn-dark {
+    background-color: #f1c40f;
+    color: #2c3e50;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn-dark:hover {
+    background-color: #d4ac0d;
+    transform: scale(1.05);
+}
+
+/* Listas de productos y cupones */
+.product-list,
+.coupon-list {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.product-list h4,
+.coupon-list h4 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.product-list li,
+.coupon-list li {
+    background: rgba(241, 196, 15, 0.2);
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #f1c40f;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .Admin .parent {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .Admin .prods,
+    .Admin .cpns {
+        width: 90%;
+    }
+}

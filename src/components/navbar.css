@@ -1,0 +1,85 @@
+/* Estilos generales para la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Espacia los elementos */
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+    background-color: #1a1a1a; /* Color elegante para autos */
+}
+
+/* Contenedor de los enlaces de navegación */
+.navbar-menu {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos de los enlaces */
+.navbar-menu a {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el mouse sobre los enlaces */
+.navbar-menu a:hover {
+    color: #ffcc00; /* Amarillo dorado para resaltar */
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+/* Estilo del título de la tienda */
+.navbar-menu .title {
+    font-weight: bolder;
+    color: #ffcc00; /* Amarillo dorado para destacar */
+    font-size: 30px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+/* Alinear "View Cart" a la derecha */
+.navbar-menu .end {
+    margin-left: auto;
+}
+
+/* Estilos para el usuario */
+.user-info {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+/* Agregar espacio entre el nombre del usuario y el icono */
+.user-info p {
+    margin: 0;
+    padding-left: 10px;
+}
+
+/* Responsive: Ajustes para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .navbar-menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-menu a {
+        margin: 10px 0;
+    }
+
+    .user-info {
+        margin-top: 10px;
+    }
+}
