@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import Product from "../components/product";
-import { StoreContext } from "../context/StoreContext"; // Importa el contexto
+import { StoreContext } from "../context/StoreContext"; 
 import "./catalog.css";
 
 const catalog = [
@@ -14,7 +14,7 @@ const categories = ["All", "Deportivo", "SUV", "Truck", "Convertible"];
 
 function Catalog() {
     const [selectedCategory, setSelectedCategory] = useState("All");
-    const { addToCart, getCartCount } = useContext(StoreContext); // Obtiene la función para agregar productos y el contador
+    const { addToCart, getCartCount } = useContext(StoreContext); 
 
     const filteredProducts = selectedCategory === "All"
         ? catalog
@@ -23,7 +23,7 @@ function Catalog() {
     return (
         <div className="catalog page">
             <h1>🚗 Browse Our Latest Car Collection 🚙</h1>
-            <p>🛒 You have {getCartCount()} items in your cart.</p> {/* Muestra el número de productos en el carrito */}
+            <p>🛒 You have {getCartCount()} items in your cart.</p> 
 
             <div className="filters">
                 {categories.map((category, index) => 

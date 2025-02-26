@@ -1,8 +1,9 @@
 import { useContext, useState } from "react";
 import { StoreContext } from "../context/StoreContext";
-import "./Admin.css"; // Asegúrate de importar los estilos
+import "./Admin.css"; 
 
 function Admin() {
+    
     const { products, addProduct, coupons, addCoupon } = useContext(StoreContext);
     const [product, setProduct] = useState({ title: "", price: "", image: "", category: "" });
     const [coupon, setCoupon] = useState({ code: "", discount: "" });
@@ -13,7 +14,7 @@ function Admin() {
             return;
         }
         addProduct(product);
-        setProduct({ title: "", price: "", image: "", category: "" }); // Limpiar formulario
+        setProduct({ title: "", price: "", image: "", category: "" }); 
     }
 
     function saveCoupon() {
@@ -22,14 +23,13 @@ function Admin() {
             return;
         }
         addCoupon(coupon);
-        setCoupon({ code: "", discount: "" }); // Limpiar formulario
+        setCoupon({ code: "", discount: "" }); 
     }
 
     return (
         <div className="Admin">
             <h2>Admin Panel</h2>
             <div className="parent">
-                {/* Formulario para agregar productos */}
                 <div className="prods">
                     <h4>Agregar Producto</h4>
                     <input className="form-control" type="text" placeholder="Título" value={product.title} onChange={e => setProduct({ ...product, title: e.target.value })} />
@@ -39,7 +39,6 @@ function Admin() {
                     <button className="btn-dark" onClick={saveProduct}>Guardar Producto</button>
                 </div>
 
-                {/* Formulario para agregar cupones */}
                 <div className="cpns">
                     <h4>Agregar Cupón</h4>
                     <input className="form-control" type="text" placeholder="Código" value={coupon.code} onChange={e => setCoupon({ ...coupon, code: e.target.value })} />
@@ -48,7 +47,6 @@ function Admin() {
                 </div>
             </div>
 
-            {/* Mostrar productos */}
             <div className="prods">
                 <h4>Lista de Productos</h4>
                 <ul className="product-list">
@@ -61,7 +59,6 @@ function Admin() {
                 </ul>
             </div>
 
-            {/* Mostrar cupones */}
             <div className="cpns">
                 <h4>Lista de Cupones</h4>
                 <ul className="coupon-list">
@@ -70,6 +67,12 @@ function Admin() {
                     ))}
                 </ul>
             </div>
+
+            {/* Vive tu vida y aprecia lo que tienes */}
+            {/* Enfócate, tú sabes lo que te mereces */}
+            {/* Quieren compararse con lo que ahora soy */}
+            {/* No estás en mis zapatos, no sabes ni quién soy */}
+
         </div>
     );
 }
